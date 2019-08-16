@@ -1,23 +1,23 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.1.7'
+gem 'rails',          '~> 5.1.7'
 gem 'bootstrap-sass', '3.4.1'
-gem 'bcrypt', '3.1.12'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails', '4.3.1'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'bcrypt',         '3.1.12'
+gem 'puma',           '~> 3.7'
+gem 'sass-rails',     '~> 5.0'
+gem 'uglifier',       '>= 1.3.0'
+gem 'coffee-rails',   '~> 4.2'
+gem 'jquery-rails',   '4.3.1'
+gem 'turbolinks',     '~> 5'
+gem 'jbuilder',       '~> 2.5'
 gem 'byebug'
 
 group :development, :test do
-  gem 'solargraph'
   gem 'sqlite3', '1.3.13'
 end
 
 group :development do
+  gem 'solargraph',            '>0.32.5'
   gem 'web-console',           '3.5.1'
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
@@ -30,7 +30,7 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
-  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+  gem 'wdm',                      '>= 0.1.0' if Gem.win_platform?
 end
 
 group :production do
