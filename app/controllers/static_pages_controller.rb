@@ -11,10 +11,25 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def fbi
+  def backend
+  end
+
+  def docker
+  end
+
+  def bookshelf
+  end
+
+  def javascript
+  end
+
+  def projects
+  end
+
+  def python
   end
 
   def resume
   end
-  
+
 end
