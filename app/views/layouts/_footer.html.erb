@@ -1,13 +1,34 @@
+!!!5
+%title Sticky Footer
+:sass
+  body
+    padding: 0
+    margin: 0
+    height: 100%
+  #wrapper
+    min-height: 100%
+    position: relative
+  #main-content
+    padding: 10px 10px 60px
+  footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 60px
+#wrapper
+  %header Header
+  #main-content Content
+  %footer Footer
+
 <footer class="footer">
   <small>
-    The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    Eric Trimble - 2020 - inspired by Michael Hartl's Ruby on Rails expertise.
   </small>
   <nav>
     <ul>
+      <li><%= link_to "Home",   root_path %></li>
       <li><%= link_to "About",   about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
     </ul>
   </nav>
 </footer>

@@ -11,6 +11,8 @@ gem 'jquery-rails',   '4.3.1'
 gem 'turbolinks',     '~> 5'
 gem 'jbuilder',       '~> 2.5'
 gem 'byebug'
+gem "haml"
+gem "sass"
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

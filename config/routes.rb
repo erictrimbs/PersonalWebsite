@@ -2,17 +2,28 @@ Rails.application.routes.draw do    # For details on the DSL available within th
 
   root 'static_pages#home'
 
-  get    '/helf',    to:'static_pages#help'
+  get    '/home',   to: 'static_pages#home'
   get    '/about',   to: 'static_pages#about'
-  get    '/help',    to: 'static_pages#help'
-  get    '/contact', to: 'static_pages#contact'  
+  get    '/contact', to: 'static_pages#contact'
+  get    '/resume',  to: 'static_pages#resume'
+  get    '/bookshelf',  to: 'static_pages#bookshelf'
+  get    '/projects',  to: 'static_pages#projects'
 
+  #individual projects
+  get    '/c',  to: 'static_pages#c'
+  get    '/python',  to: 'static_pages#python'
+  get    '/javascript',  to: 'static_pages#javascript'
+  get    '/rubyonrails',  to: 'static_pages#rubyonrails'
+  get    '/backend',  to: 'static_pages#backend'
+  get    '/docker',  to: 'static_pages#docker'
+  
+  #users
   get    '/login',    to: 'sessions#new'
   post   '/login',    to: 'sessions#create'
-  delete '/logout',    to: 'sessions#destroy'
+  delete '/logout',   to: 'sessions#destroy'
 
-  get    '/signup',  to: 'users#new'
-  post   '/signup',  to: 'users#create'
+  get    '/signup',   to: 'users#new'
+  post   '/signup',   to: 'users#create'
   resources :users
 
 end
