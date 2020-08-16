@@ -261,9 +261,12 @@ pre {
   border-radius: .25rem;
 }
 .card-img-top {
+  min-height: 160px;
+  display: block;
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
+  background-color: rgb(99, 99, 99);
 }
 img {
   vertical-align: middle;
@@ -276,9 +279,8 @@ img {
 }
 .card-title {
   margin-bottom: .75rem;
-}
-.h5, h5 {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 

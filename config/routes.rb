@@ -10,12 +10,13 @@ Rails.application.routes.draw do    # For details on the DSL available within th
   get    '/projects',  to: 'static_pages#projects'
 
   #individual projects
-  get    '/projects/c',  to: 'static_pages#c'
+  get    '/projects/connectfour',  to: 'static_pages#connectfour'
   get    '/projects/python',  to: 'static_pages#python'
   get    '/projects/javascript',  to: 'static_pages#javascript'
-  get    '/projects/rubyonrails',  to: 'static_pages#rubyonrails'
   get    '/projects/backend',  to: 'static_pages#backend'
   get    '/projects/docker',  to: 'static_pages#docker'
+  get    '/projects/website',  to: 'static_pages#website'
+
   
   #users
   get    '/login',    to: 'sessions#new'
